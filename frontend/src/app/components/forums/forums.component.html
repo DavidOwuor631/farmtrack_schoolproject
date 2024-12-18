@@ -1,0 +1,55 @@
+<div class="forums-container">
+    <div class="forum-header">
+      <h2>Farmer Forums</h2>
+      <button class="new-topic-btn" (click)="toggleNewTopic()">New Topic</button>
+    </div>
+  
+    <div class="new-topic-form" *ngIf="isNewTopicVisible">
+      <input
+        type="text"
+        placeholder="Enter topic title"
+        [(ngModel)]="newTopicTitle"
+        class="topic-input"
+      />
+      <textarea
+        placeholder="Describe your topic..."
+        [(ngModel)]="newTopicContent"
+        class="topic-textarea"
+      ></textarea>
+      <button class="submit-btn" (click)="addNewTopic()">Submit</button>
+    </div>
+  
+    <div class="forum-topic" *ngFor="let topic of topics">
+      <div class="topic-header" (click)="toggleReplies(topic.id)">
+        <h3>{{ topic.title }}</h3>
+        <span class="author">by {{ topic.author }}</span>
+      </div>
+      <div
+        class="replies-section"
+        *ngIf="topic.showReplies"
+      >
+        <p class="topic-content">{{ topic.content }}</p>
+        <div
+          class="reply"
+          *ngFor="let reply of topic.replies"
+        >
+          <span class="reply-author">{{ reply.author }}</span>
+          <p class="reply-content">{{ reply.content }}</p>
+        </div>
+        <div class="reply-form">
+          <textarea
+            placeholder="Write a reply..."
+            [(ngModel)]="newReplyContent"
+            class="reply-textarea"
+          ></textarea>
+          <button
+            class="submit-reply-btn"
+            (click)="addReply(topic.id)"
+          >
+            Reply
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  

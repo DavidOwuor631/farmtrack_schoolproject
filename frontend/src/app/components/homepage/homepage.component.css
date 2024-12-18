@@ -1,0 +1,225 @@
+/* :host {
+  display: block;
+} */
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333; /* Dark Text for Readability */
+  overflow-x: hidden;
+}
+
+/* Single Image Section */
+.single-image {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  /* background-color: #e8f4f1; Light Green Tint */
+}
+
+.single-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Hero Section */
+.hero-section {
+  width: 100%;
+  height: 40vh;
+  /* background: linear-gradient(to bottom right, #4caf50, #2e7d32); Warm Green Gradient */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-content {
+  background: rgba(21, 73, 11, 0.4);
+  padding: 30px;
+  border-radius: 15px;
+}
+
+.hero-title {
+  font-size: 3em;
+  font-weight: bold;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.hero-tagline {
+  font-size: 1.5em;
+  margin: 15px 0;
+}
+
+.cta-button {
+  background-color: #66bb6a; /* Bright Green Button */
+  color: white;
+  padding: 15px 30px;
+  text-decoration: none;
+  font-size: 1.2em;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #4caf50; /* Darker Green on Hover */
+  transform: scale(1.05);
+}
+
+/* Mission Section */
+.mission-section {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #d2dbd2; /* Very Light Green */
+  max-width: 1000px;
+  margin: 20px auto;
+  border-radius: 15px;
+}
+
+.mission-title {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #2e7d32; /* Dark Green */
+}
+
+.mission-text {
+  font-size: 1.2em;
+  color: #555; /* Dark Gray for Text */
+}
+
+/* Features Section */
+.features-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 40px 20px;
+  background: rgba(194, 211, 191, 0.4);
+}
+
+.feature-item {
+  text-align: center;
+  max-width: 300px;
+  flex: 1 1 280px;
+  padding: 20px;
+  border-radius: 15px;
+  background: #dfe5e1; /* White Background */
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light Shadow */
+}
+
+.feature-icon {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #4caf50; /* Green Icon Color */
+}
+
+.feature-title {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.feature-description {
+  font-size: 1em;
+}
+
+/* Footer */
+.footer {
+  width: 100%;
+  background-color: #ecefec00; /* Dark Green */
+  color: rgb(48, 5, 5);
+  padding: 20px;
+  text-align: center;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color: rgb(53, 36, 36);
+  margin: 0 10px;
+  font-size: 1.5em;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #66bb6a; /* Bright Green for Hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.5em;
+  }
+
+  .hero-tagline {
+    font-size: 1.2em;
+  }
+
+  .cta-button {
+    font-size: 1em;
+    padding: 10px 20px;
+  }
+
+  .mission-title {
+    font-size: 2em;
+  }
+
+  .mission-text {
+    font-size: 1em;
+  }
+
+  .feature-title {
+    font-size: 1.5em;
+  }
+
+  .feature-description {
+    font-size: 0.9em;
+  }
+
+  .footer {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 1.8em;
+  }
+
+  .hero-tagline {
+    font-size: 1em;
+  }
+
+  .cta-button {
+    font-size: 0.9em;
+    padding: 8px 16px;
+  }
+
+  .mission-title {
+    font-size: 1.5em;
+  }
+
+  .mission-text {
+    font-size: 0.9em;
+  }
+
+  .feature-title {
+    font-size: 1.2em;
+  }
+
+  .feature-description {
+    font-size: 0.8em;
+  }
+
+  .footer {
+    font-size: 0.8em;
+  }
+}

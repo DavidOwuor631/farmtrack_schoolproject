@@ -1,0 +1,71 @@
+<div class="container">
+
+  <div class="wrapper">
+    <h1> signup form </h1>
+
+    <form (ngSubmit)="onSubmit()" [formGroup]="form">
+      
+      <div class="form-group">
+        <input type="text" name="username" placeholder="Enter username" required
+              formControlName="username">
+        <i class='bx bxs-user'></i>
+      </div>
+      <span class="error-msg" *ngIf="form.get('name')?.touched && form.get('name')?.invalid">
+        <label *ngIf="form.get('name')?.hasError('required')">  Please input an a username </label>
+        <!-- <label *ngIf="form.get('name')?.hasError('minLength')">  Username needs to be more than 2 characers</label> -->
+        <!-- <label *ngIf="form.get('name')?.hasError('maxLength')">  Username needs to be less than 15 characers</label> -->
+     </span>
+      
+      
+      <div class="form-group">
+        <input type="email" name="email" placeholder="Enter email" required
+                formControlName="email">
+        <i class='bx bxs-envelope'></i>
+      </div>
+      <span class="error-msg" *ngIf="form.get('email')?.touched && form.get('email')?.invalid"> 
+        <label *ngIf="form.get('email')?.hasError('required')"> Please input an email account</label>
+        <label *ngIf="form.get('email')?.hasError('email')"> Please input a valid email</label>
+      </span>
+
+
+      <div class="form-group">
+        <input type="password" name="password" placeholder="Enter password" required
+                formControlName="password">
+        <i class='bx bxs-lock-alt' ></i>
+      </div>
+      <span class="error-msg" *ngIf="form.get('password')?.touched && form.get('password')?.invalid">
+          <label *ngIf="form.get('password')?.hasError('required') "> Please input a password </label>
+          <label *ngIf="form.get('password')?.hasError('pattern')"> Password must contain at least 1 lowercase letter, 1 uppercase letter, 1 digit and 1 special character</label>
+      </span>
+
+      <div class="form-role">
+        <label for="role"> Select a role </label>
+        <section>
+          <label>
+          <input type="radio" name="role" value="farmer"
+                  formControlName="role"> Farmer  
+            <i class='bx bxs-leaf'></i>
+          </label>
+          <label>
+          <input type="radio" name="role" value="buyer"
+                  formControlName="role"> Buyer
+            <i class='bx bxs-store-alt'></i>
+          </label>
+        </section>
+      </div>
+
+      <div class="forgot-password">
+        <a href="#"> Forgot Password? </a>
+      </div>
+
+      <button class="btn" [disabled]="!form.valid">Signup</button>
+
+
+      <div class="register-link">
+        Already have an account? <a href="#"> login </a> instead
+      </div>
+
+    </form>
+
+  </div>
+</div>

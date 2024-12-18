@@ -1,0 +1,189 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  min-width: 100vw;
+  background-image: url('https://images.unsplash.com/photo-1563514227147-6d2ff665a6a0?q=80&w=1742&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); 
+  background-size: cover;
+  background-position: center;
+}
+
+.wrapper {
+  width: 420px;
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, .2);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+  color: #fff;
+  padding: 30px 40px;
+  border-radius:10px;
+}
+
+.wrapper h1 {
+  font-size: 1.7rem;
+  text-align: center;
+  color:var(--theme-color);
+  text-transform: capitalize;
+  padding-top: 0 ;
+
+}
+
+.wrapper .form-group {
+  width: 100%;
+  height: 2.5rem;
+  margin: 15px 0;
+  position: relative; /*remove incase of error*/
+}
+
+.form-group input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline:none;
+  border: 2px solid rgba(255, 255, 255, .2);
+  border-radius: 40px;
+  font-size: large;
+  color: #fff;
+  padding: 0 .1rem 0 .5rem; /*top right bottom left*/
+}
+
+
+.form-group input::placeholder {
+  color: #fff;
+  font-weight: bold;
+  font-size: large;
+/*  margin-left: 2rem;*/
+}
+
+.form-group i {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: large;
+}
+
+.form-role {
+  height: 3.3rem;
+  width: 100%;
+  padding: .4rem;
+  font-size: large;
+}
+
+.form-role section {
+  display: flex;
+  justify-content: space-around;
+}
+
+.form-role section label input[type="radio"]:checked {
+  accent-color: var(--alternate-color);
+}
+
+.forgot-password {
+  display: flex;
+  justify-content: flex-end;
+  font-size: small;
+}
+
+.forgot-password a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.forgot-password a:hover {
+  text-decoration: underline;
+}
+
+.btn {
+  margin-top: .3rem;
+  width: 100%;
+  height: 2.7rem;
+  background-color: var(--white);
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+  cursor: pointer;
+  font-size: large;
+  color: var(--faded-grey);
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.register-link {
+  font-size: small;
+  text-align: center;
+  margin-top: 20px 0 15px;
+}
+
+.register-link a{
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.register-link a:hover{
+  text-decoration: underline;
+}
+
+
+.error-msg {
+  font-size: x-small;
+  font-style: italic;
+  color: rgb(197, 47, 47);
+  margin: 0;
+  margin-left: 5%;
+
+}
+
+
+/* .form-group input.error-msg{
+  Trying to lock the error messages such that when an input has an error
+  it will be displayed on the entire form input, not just in the text
+  border: 2px solid red !important;
+} */
+
+
+/* making the page responsive */
+@media (max-width: 576px) {
+  /* Styles for small mobile phones */
+  .container {
+    background-color: red;
+  }
+}
+
+/* @media (min-width: 576px) and (max-width: 767px) {
+  Styles for landscape phones
+  .container {
+    background-color: yellow;
+  }
+
+} */
+
+/* @media (min-width: 768px) and (max-width: 991px) {
+  Styles for tablets
+  .container {
+    background-color: green;
+  }
+
+} */
+
+/* @media (min-width: 992px) and (max-width: 1199px) {
+  Styles for laptops
+  .container {
+    background-color: purple;
+  }
+
+} */
+
+ /* @media (min-width: 1200px) {
+  Styles for desktops
+  .container {
+    background-color: sandybrown;
+  }
+
+} */

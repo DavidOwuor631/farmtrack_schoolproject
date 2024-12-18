@@ -1,0 +1,82 @@
+ .welcome-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('/assets/carrot.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  text-align: center;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  
+}
+
+.welcome-content {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 60px 40px;
+  border-radius: 15px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+  max-width: 600px;
+  width: 90%;
+}
+
+.welcome-title {
+  font-size: 3.5em;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.welcome-description {
+  font-size: 1.5em;
+  margin-bottom: 40px;
+  line-height: 1.5;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.chevron-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.chevron-btn {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 3em;
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+  padding: 10px;
+}
+
+.chevron-btn:hover {
+  transform: translateY(15px);
+  color: #1abc9c;
+}
+
+.chevron-btn:active {
+  transform: translateY(10px);
+}
+
+@media (max-width: 768px) {
+  .welcome-content {
+    padding: 40px 20px;
+  }
+
+  .welcome-title {
+    font-size: 2.5em;
+  }
+
+  .welcome-description {
+    font-size: 1.2em;
+  }
+
+  .chevron-btn {
+    font-size: 2.5em;
+  }
+}  

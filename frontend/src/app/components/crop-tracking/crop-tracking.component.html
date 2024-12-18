@@ -1,0 +1,64 @@
+<div class="crop-tracking">
+  <h2 class="page-title">Crop Tracking</h2>
+
+  <!-- Input Form -->
+  <form [formGroup]="cropForm" (ngSubmit)="onSubmit()" class="crop-form">
+    <div class="form-group">
+      <label for="temperature">temperature</label>
+      <input id="temperature" formControlName="temperature" type="text" placeholder="Enter temperature">
+    </div>
+
+    <div class="form-group">
+      <label for="humidity">humidity</label>
+      <input id="humidity" formControlName="humidity" type="text">
+    </div>
+
+    <div class="form-group">
+      <label for="ph">ph</label>
+      <input id="ph" formControlName="ph" type="text">
+    </div>
+
+    <div class="form-group">
+      <label for="rainfall">rainfall</label>
+      <input id="rainfall" formControlName="rainfall" type="text" placeholder="Enter rainfall per week">
+    </div>
+
+
+    <div class="form-group">
+      <label for="nitrogen">nitrogen</label>
+      <input id="nitrogen" formControlName="nitrogen" type="text" placeholder="Enter nitogen content in soil">
+    </div>
+    
+    <div class="form-group">
+      <label for="phosphorus">phosphorus</label>
+      <input id="phosphorus" formControlName="phosphorus" type="text" placeholder="Enter phosphorus content in soil">
+    </div>
+
+    <div class="form-group">
+      <label for="potassium">potassium</label>
+      <input id="potassium" formControlName="potassium" type="text" placeholder="Enter potassium content in soil">
+    </div>
+    <!--
+    <div class="form-group">
+      <label for="notes">Notes</label>
+      <textarea id="notes" formControlName="notes" placeholder="Enter any additional notes"></textarea>
+    </div>-->
+
+    <button type="submit" class="btn-submit"> Crop Data</button>
+  </form>
+
+  <!-- Display Crops -->
+  <div class="crop-list">
+    <h3>Tracked Crops</h3>
+    <div class="crop-card" *ngFor="let crop of crops">
+      <h4>{{ crop.cropType }}</h4>
+      <div class="crop-details">
+        <p><strong>Planting Date:</strong> {{ crop.plantingDate }}</p>
+        <p><strong>Expected Harvest Date:</strong> {{ crop.expectedHarvestDate }}</p>
+        <p><strong>Growth Stage:</strong> {{ crop.growthStage }}</p>
+        <p><strong>Health Status:</strong> {{ crop.healthStatus }}</p>
+        <p><strong>Notes:</strong> {{ crop.notes }}</p>
+      </div>
+    </div>
+  </div>
+</div>

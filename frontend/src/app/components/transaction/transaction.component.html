@@ -1,0 +1,35 @@
+<div class="transaction-container">
+    <h1 class="title">Marketplace</h1>
+  
+    <div class="product-list">
+      <div class="product-card" *ngFor="let product of products">
+        <img [src]="product.image" alt="{{ product.name }}" class="product-image">
+        <div class="product-info">
+          <h2 class="product-name">{{ product.name }}</h2>
+          <p class="product-price">{{ product.price }}</p>
+          <p class="product-quantity">Available: {{ product.quantity }}</p>
+          <button class="add-to-cart-btn" (click)="addToCart(product)" [disabled]="product.quantity === 0">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  
+    <div class="cart">
+      <h2 class="cart-title">Your Cart</h2>
+      <div *ngIf="cart.length > 0; else emptyCart">
+        <div class="cart-item" *ngFor="let item of cart">
+          <span>{{ item.name }}</span>
+          <span>{{ item.price | currency }}</span>
+          <span>Qty: {{ item.quantity }}</span>
+        </div>
+        <div class="cart-total">
+          <strong>Total:</strong>
+          <span>{{ cartTotal | currency }}</span>
+          <button class="payment-btn" (click)="proceedToPayment()">Proceed to Payment</button>
+        </div>
+      </div>
+      <ng-template #emptyCart>
+        <p>Your cart is empty.</p>
+      </ng-template>
+    </div>
+  </div>
+  

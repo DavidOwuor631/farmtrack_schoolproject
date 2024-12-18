@@ -1,0 +1,142 @@
+.forums-container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .forum-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .forum-header h2 {
+    margin: 0;
+    font-size: 1.8em;
+    color: #2c3e50;
+  }
+  
+  .new-topic-btn {
+    background-color: #1abc9c;
+    border: none;
+    padding: 10px 15px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .new-topic-btn:hover {
+    background-color: #16a085;
+  }
+  
+  .new-topic-form {
+    margin-bottom: 20px;
+  }
+  
+  .topic-input,
+  .topic-textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1em;
+  }
+  
+  .submit-btn {
+    background-color: #3498db;
+    border: none;
+    padding: 10px 15px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background-color: #2980b9;
+  }
+  
+  .forum-topic {
+    background-color: #fff;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 15px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+  }
+  
+  .topic-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .topic-header h3 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #2c3e50;
+  }
+  
+  .topic-header .author {
+    color: #7f8c8d;
+    font-size: 0.9em;
+  }
+  
+  .replies-section {
+    margin-top: 15px;
+  }
+  
+  .topic-content {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+  }
+  
+  .reply {
+    margin-bottom: 15px;
+  }
+  
+  .reply-author {
+    font-weight: bold;
+    color: #2c3e50;
+  }
+  
+  .reply-content {
+    margin: 5px 0 0 10px;
+    font-size: 1em;
+    color: #7f8c8d;
+  }
+  
+  .reply-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .reply-textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1em;
+    margin-bottom: 10px;
+  }
+  
+  .submit-reply-btn {
+    background-color: #1abc9c;
+    border: none;
+    padding: 10px 15px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-reply-btn:hover {
+    background-color: #16a085;
+  }
+  

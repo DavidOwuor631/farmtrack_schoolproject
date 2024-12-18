@@ -1,0 +1,55 @@
+.
+├── collections
+│   └── auth.collections.http
+├── database
+│   ├── storedProcedures
+│   │   └── users
+│   │       ├── addUser.sql
+│   │       ├── deleteUser.sql
+│   │       ├── getUserByEmail.sql
+│   │       ├── getUserById.sql
+│   │       ├── getUsers.sql
+│   │       └── updateUser.sql
+│   └── tables
+│       └── users.sql
+├── dist
+│   ├── api-v1
+│   │   ├── controllers
+│   │   │   └── auth.controllers.js
+│   │   ├── databaseHelpers
+│   │   │   └── index.js
+│   │   ├── middleware
+│   │   │   └── index.js
+│   │   ├── models
+│   │   │   └── auth.models.js
+│   │   ├── routes
+│   │   │   └── auth.routes.js
+│   │   └── validators
+│   │       └── auth.validators.js
+│   ├── config
+│   │   └── index.js
+│   └── server.js
+├── node_modules  [190 entries exceeds filelimit, not opening dir]
+├── package.json
+├── package-lock.json
+├── src
+│   ├── api-v1
+│   │   ├── controllers
+│   │   │   └── auth.controllers.ts
+│   │   ├── databaseHelpers
+│   │   │   └── index.ts
+│   │   ├── middleware
+│   │   │   └── index.ts
+│   │   ├── models
+│   │   │   └── auth.models.ts
+│   │   ├── routes
+│   │   │   └── auth.routes.ts
+│   │   └── validators
+│   │       └── auth.validators.ts
+│   ├── config
+│   │   └── index.ts
+│   └── server.ts
+├── tree.txt
+└── tsconfig.json
+
+25 directories, 28 files

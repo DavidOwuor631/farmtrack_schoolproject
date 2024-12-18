@@ -1,0 +1,131 @@
+/* Background styling for the page */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('https://images.pexels.com/photos/2252584/pexels-photo-2252584.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'); 
+  background-size: cover;
+  background-position: center;
+}
+
+/* Centered and styled login form container */
+.login-form-container {
+  background-color: rgba(255, 255, 255, 0.15); /* Semi-transparent background */
+  backdrop-filter: blur(10px); /* Blur effect */
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  max-width: 380px;
+  width: 100%;
+  text-align: center;
+  color: black;
+}
+
+/* Login form heading */
+h2 {
+  color:  #093c0a;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+/* Input fields styling */
+input {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: black;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Focus state for inputs */
+input:focus {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid black;
+}
+
+/* Options (checkbox, forgot password) */
+.form-group.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.forgot-password {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+/* Login button styling */
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4CAF50; /* Green background */
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:disabled {
+  background-color:  #d7dcd78f;
+  cursor: not-allowed;
+}
+
+/* Register link below the login button */
+.register-link {
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.register-link a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive design for small screens */
+@media (max-width: 600px) {
+  .login-form-container {
+    padding: 30px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  input {
+    font-size: 14px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+}
